@@ -12,3 +12,6 @@ print(friends.index("Nike")) # show if the object is in the list (if it is not t
 friends = ["Alfred", "John", "Jim", "Jorge", "Nike", "Mike", "James", "Jorge"] # just to rebuild with 2 strings "Jorge" (there is anything new here)
 print(friends.count("Jorge")) # it will print the number of objects like "Jorge"
 friends.sort() # it will sort the list in ascending order (in this case it will be the same as alphabetical order)
+lucky_numbers.sort() # it will sort the list in ascending order (in this case it will be the same as numerical order)
+lucky_numbers.reverse() # it will reverse(inverter) the list
+friends2 = friends.copy() # create a copy of the friends list (with the same attributes)
