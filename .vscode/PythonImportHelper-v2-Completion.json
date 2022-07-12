@@ -1,0 +1,244 @@
+[
+    {
+        "label": "*",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "deepSearch",
+        "kind": 2,
+        "importPath": "BruteWarmUp01",
+        "description": "BruteWarmUp01",
+        "peekOfCode": "def deepSearch(node, listM, infected):\n    count = 0\n    for i in range(n):\n        if infected.count(i) == 0 and listM.count((i, node)) + listM.count((node, i)) == 0:\n            infected.append(i)\n            return deepSearch(node, listM, infected)+1\n    return count",
+        "detail": "BruteWarmUp01",
+        "documentation": {}
+    },
+    {
+        "label": "listM",
+        "kind": 5,
+        "importPath": "BruteWarmUp01",
+        "description": "BruteWarmUp01",
+        "peekOfCode": "listM = []\nlistQ = []\ninfected = []\nfor i in range(m):\n    u, v = map(int, input().split())\nfor i in range(q):\nfor node in listQ:\ndef deepSearch(node, listM, infected):\n    count = 0\n    for i in range(n):",
+        "detail": "BruteWarmUp01",
+        "documentation": {}
+    },
+    {
+        "label": "listQ",
+        "kind": 5,
+        "importPath": "BruteWarmUp01",
+        "description": "BruteWarmUp01",
+        "peekOfCode": "listQ = []\ninfected = []\nfor i in range(m):\n    u, v = map(int, input().split())\nfor i in range(q):\nfor node in listQ:\ndef deepSearch(node, listM, infected):\n    count = 0\n    for i in range(n):\n        if infected.count(i) == 0 and listM.count((i, node)) + listM.count((node, i)) == 0:",
+        "detail": "BruteWarmUp01",
+        "documentation": {}
+    },
+    {
+        "label": "infected",
+        "kind": 5,
+        "importPath": "BruteWarmUp01",
+        "description": "BruteWarmUp01",
+        "peekOfCode": "infected = []\nfor i in range(m):\n    u, v = map(int, input().split())\nfor i in range(q):\nfor node in listQ:\ndef deepSearch(node, listM, infected):\n    count = 0\n    for i in range(n):\n        if infected.count(i) == 0 and listM.count((i, node)) + listM.count((node, i)) == 0:\n            infected.append(i)",
+        "detail": "BruteWarmUp01",
+        "documentation": {}
+    },
+    {
+        "label": "lucky_numbers",
+        "kind": 5,
+        "importPath": "Part10",
+        "description": "Part10",
+        "peekOfCode": "lucky_numbers = [4, 8, 15, 16, 23, 42, 7]\nfriends = [\"Alfred\", \"John\", \"Jim\", \"Nike\", \"Mike\", \"James\", \"Jorge\"]\nprint(friends) # just print the item friends' list\nfriends.extend(lucky_numbers) # adding the objects of the lucky numbers list at the end of the friends list\nprint(friends) # because of the previous used comand (friends.extend(lucky_numbers)) the list will be print together with the lucky numbers list in sequence \nfriends.append(\"New\") # it will add the string \"New\" in the actual end of the list\nfriends.insert(1, \"Ben\") # it will add the string \"Ben\" in the index 1 (the string \"John\" and the other will be pushed to the right) ; friends.insert(index, object)\nfriends.remove(\"James\") # it will remove the string \"James\" from the list\nfriends.clear() # remove all the objects from the list\nfriends.pop() # remove the last object from the list (in this case the string \"Jorge\")",
+        "detail": "Part10",
+        "documentation": {}
+    },
+    {
+        "label": "friends",
+        "kind": 5,
+        "importPath": "Part10",
+        "description": "Part10",
+        "peekOfCode": "friends = [\"Alfred\", \"John\", \"Jim\", \"Nike\", \"Mike\", \"James\", \"Jorge\"]\nprint(friends) # just print the item friends' list\nfriends.extend(lucky_numbers) # adding the objects of the lucky numbers list at the end of the friends list\nprint(friends) # because of the previous used comand (friends.extend(lucky_numbers)) the list will be print together with the lucky numbers list in sequence \nfriends.append(\"New\") # it will add the string \"New\" in the actual end of the list\nfriends.insert(1, \"Ben\") # it will add the string \"Ben\" in the index 1 (the string \"John\" and the other will be pushed to the right) ; friends.insert(index, object)\nfriends.remove(\"James\") # it will remove the string \"James\" from the list\nfriends.clear() # remove all the objects from the list\nfriends.pop() # remove the last object from the list (in this case the string \"Jorge\")\nprint(friends.index(\"Nike\")) # show if the object is in the list (if it is not there will be returned a error messege) and in what index number is the object string \"Nike\"",
+        "detail": "Part10",
+        "documentation": {}
+    },
+    {
+        "label": "friends",
+        "kind": 5,
+        "importPath": "Part10",
+        "description": "Part10",
+        "peekOfCode": "friends = [\"Alfred\", \"John\", \"Jim\", \"Jorge\", \"Nike\", \"Mike\", \"James\", \"Jorge\"] # just to rebuild with 2 strings \"Jorge\" (there is anything new here)\nprint(friends.count(\"Jorge\")) # it will print the number of objects like \"Jorge\"\nfriends.sort() # it will sort the list in ascending order (in this case it will be the same as alphabetical order)\nlucky_numbers.sort() # it will sort the list in ascending order (in this case it will be the same as numerical order)\nlucky_numbers.reverse() # it will reverse(inverter) the list\nfriends2 = friends.copy() # create a copy of the friends list (with the same attributes)",
+        "detail": "Part10",
+        "documentation": {}
+    },
+    {
+        "label": "friends2",
+        "kind": 5,
+        "importPath": "Part10",
+        "description": "Part10",
+        "peekOfCode": "friends2 = friends.copy() # create a copy of the friends list (with the same attributes)",
+        "detail": "Part10",
+        "documentation": {}
+    },
+    {
+        "label": "coordinates",
+        "kind": 5,
+        "importPath": "Part11",
+        "description": "Part11",
+        "peekOfCode": "coordinates = (4, 5) # create a tuple, look \"[]\" create a list and \"()\" a tuple, both can store different elements. \n#todo (to see) Important: tuple is immutable, if it be tried there will appear an error messege like: \"... 'tuple' object does not support item assignment\").\nprint(coordinates[0]) # it will print the element in index 0 of the tuple.\ncoordinateslist = [(4,5), (8,11), (7,\"Hello\"), (True, False)]\nprint(coordinateslist[1]) # it will print the element(in this case a tuple) in index 1 of the list.",
+        "detail": "Part11",
+        "documentation": {}
+    },
+    {
+        "label": "coordinateslist",
+        "kind": 5,
+        "importPath": "Part11",
+        "description": "Part11",
+        "peekOfCode": "coordinateslist = [(4,5), (8,11), (7,\"Hello\"), (True, False)]\nprint(coordinateslist[1]) # it will print the element(in this case a tuple) in index 1 of the list.",
+        "detail": "Part11",
+        "documentation": {}
+    },
+    {
+        "label": "character_name",
+        "kind": 5,
+        "importPath": "Part3",
+        "description": "Part3",
+        "peekOfCode": "character_name = \"George\"\ncharacter_age = 40 # you just need quotes (\"\") when it is a string\nis_Male = True      \nprint(\"There once was a man named\", character_name + \",\") # \"+\" separates so that print the variable text and the text withot adding spaces between\nprint(\"he was\",character_age,\"years old.\")                # \",\" separetes so that print the variable text and the text adding spaces between \nprint(\"He really liked the name \" + character_name)\nprint(\"but didn't like being \" + character_age + \".\")",
+        "detail": "Part3",
+        "documentation": {}
+    },
+    {
+        "label": "character_age",
+        "kind": 5,
+        "importPath": "Part3",
+        "description": "Part3",
+        "peekOfCode": "character_age = 40 # you just need quotes (\"\") when it is a string\nis_Male = True      \nprint(\"There once was a man named\", character_name + \",\") # \"+\" separates so that print the variable text and the text withot adding spaces between\nprint(\"he was\",character_age,\"years old.\")                # \",\" separetes so that print the variable text and the text adding spaces between \nprint(\"He really liked the name \" + character_name)\nprint(\"but didn't like being \" + character_age + \".\")",
+        "detail": "Part3",
+        "documentation": {}
+    },
+    {
+        "label": "is_Male",
+        "kind": 5,
+        "importPath": "Part3",
+        "description": "Part3",
+        "peekOfCode": "is_Male = True      \nprint(\"There once was a man named\", character_name + \",\") # \"+\" separates so that print the variable text and the text withot adding spaces between\nprint(\"he was\",character_age,\"years old.\")                # \",\" separetes so that print the variable text and the text adding spaces between \nprint(\"He really liked the name \" + character_name)\nprint(\"but didn't like being \" + character_age + \".\")",
+        "detail": "Part3",
+        "documentation": {}
+    },
+    {
+        "label": "phrase",
+        "kind": 5,
+        "importPath": "Part4",
+        "description": "Part4",
+        "peekOfCode": "phrase = (\"Giraffe\\n\\\"Academy\\\"\") # \"\\n\" is used to jump to a new line. '\\\"' is used to print quotes(\")\nprint(phrase.lower() + \"is cool\")\nprint(phrase.upper() + \"is cool\")\nprint(phrase.islower()) # it will print return (and print in this case) true or false if the text is all lower case (se o texto estiver todo em letra minúscula)\nprint(phrase.upper().isupper()) # it will printe always true\nprint (len(phrase)) # it will print the length of the string phrase\nprint(phrase[0]) # it will print the first character (G), it begin counting at position 0\nprint(phrase.index(\"Acad\")) # it will print the position where the given parameter \"Acad\" starts inside of the string (9 in this case)\nprint(phrase.index(\"z\")) # it will print a error because the given parameter \"z\" does not exist in the string phrase\nprint(phrase.replace(\"Giraffe\", \"Elephant\")) #it will print the phrase changing the word \"Giraffe\" by \"Elephant\"",
+        "detail": "Part4",
+        "documentation": {}
+    },
+    {
+        "label": "my_num",
+        "kind": 5,
+        "importPath": "Part5",
+        "description": "Part5",
+        "peekOfCode": "my_num = -7\nprint(my_num, \"menos sete\") # if it was typed withe \"+\" like: print(my_num + \"sete\") it would give error,\n# to use the function print for different kinds like number and strings we need to use \",\"\nprint(abs(my_num)) # absolute value \"abs()\"\nprint(pow(7, 2)) # power \"pow()\" | seven raised to the power of 2\nprint(min(1,4)) # minimum value \"min()\"\nprint(max(1,4)) # maximum value \"max()\"\nprint(round(1.4)) # rounding the given value\nprint(floor(1.4)) # get the lower nearst integer (1 in this case)\nprint(ceil(1.4)) # get the bigger nearst integer (2 in this case)",
+        "detail": "Part5",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "Part6",
+        "description": "Part6",
+        "peekOfCode": "name = input(\"Enter your name: \")\nage = input(\"Enter your age: \")\nprint(\"Hello \" + name + \"! You are \" + age)",
+        "detail": "Part6",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "Part6",
+        "description": "Part6",
+        "peekOfCode": "age = input(\"Enter your age: \")\nprint(\"Hello \" + name + \"! You are \" + age)",
+        "detail": "Part6",
+        "documentation": {}
+    },
+    {
+        "label": "num1",
+        "kind": 5,
+        "importPath": "Part7",
+        "description": "Part7",
+        "peekOfCode": "num1 = input(\"Enter a number: \")\nnum2 = input(\"Enter another number: \")\nresult_int = int(num1) + int(num2) # convert num1 and num2 into integers and add them one another\nresult = float(num1) + float(num2) # convert num1 and num2 into floats and add them one another\nprint(result)",
+        "detail": "Part7",
+        "documentation": {}
+    },
+    {
+        "label": "num2",
+        "kind": 5,
+        "importPath": "Part7",
+        "description": "Part7",
+        "peekOfCode": "num2 = input(\"Enter another number: \")\nresult_int = int(num1) + int(num2) # convert num1 and num2 into integers and add them one another\nresult = float(num1) + float(num2) # convert num1 and num2 into floats and add them one another\nprint(result)",
+        "detail": "Part7",
+        "documentation": {}
+    },
+    {
+        "label": "result_int",
+        "kind": 5,
+        "importPath": "Part7",
+        "description": "Part7",
+        "peekOfCode": "result_int = int(num1) + int(num2) # convert num1 and num2 into integers and add them one another\nresult = float(num1) + float(num2) # convert num1 and num2 into floats and add them one another\nprint(result)",
+        "detail": "Part7",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Part7",
+        "description": "Part7",
+        "peekOfCode": "result = float(num1) + float(num2) # convert num1 and num2 into floats and add them one another\nprint(result)",
+        "detail": "Part7",
+        "documentation": {}
+    },
+    {
+        "label": "color",
+        "kind": 5,
+        "importPath": "Part8",
+        "description": "Part8",
+        "peekOfCode": "color = input(\"Enter a color: \")\nplural_noun = input(\"Enter a plural noun: \")\ncelebrety = input(\"Enter a celebrety: \")\nprint(\"Roses are \" + color)\nprint(plural_noun + \" are blue\")\nprint(\"I love \"  + celebrety)",
+        "detail": "Part8",
+        "documentation": {}
+    },
+    {
+        "label": "plural_noun",
+        "kind": 5,
+        "importPath": "Part8",
+        "description": "Part8",
+        "peekOfCode": "plural_noun = input(\"Enter a plural noun: \")\ncelebrety = input(\"Enter a celebrety: \")\nprint(\"Roses are \" + color)\nprint(plural_noun + \" are blue\")\nprint(\"I love \"  + celebrety)",
+        "detail": "Part8",
+        "documentation": {}
+    },
+    {
+        "label": "celebrety",
+        "kind": 5,
+        "importPath": "Part8",
+        "description": "Part8",
+        "peekOfCode": "celebrety = input(\"Enter a celebrety: \")\nprint(\"Roses are \" + color)\nprint(plural_noun + \" are blue\")\nprint(\"I love \"  + celebrety)",
+        "detail": "Part8",
+        "documentation": {}
+    },
+    {
+        "label": "friends",
+        "kind": 5,
+        "importPath": "Part9",
+        "description": "Part9",
+        "peekOfCode": "friends = [\"Alfred\", \"John\", \"Jim\", \"Nike\"] # the list can store multiple types of objects (string, integers, booleans, etc)\n#index:      [0]       [1]     [2]    [3]\nprint(friends[1])  # it will print John\nprint(friends[-1]) # it will print Jim (when we use a negative number, the list will be scrolled from back to front)\nprint(friends[1:3]) # it will print the element in index [1], [2] (star printing at index [1] but stop printing at index [3])\nfriends[1] = \"Mike\" # Change the object saved in the index [1] from the list",
+        "detail": "Part9",
+        "documentation": {}
+    },
+    {
+        "label": "friends[1]",
+        "kind": 5,
+        "importPath": "Part9",
+        "description": "Part9",
+        "peekOfCode": "friends[1] = \"Mike\" # Change the object saved in the index [1] from the list",
+        "detail": "Part9",
+        "documentation": {}
+    }
+]
